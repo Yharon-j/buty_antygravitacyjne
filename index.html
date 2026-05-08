@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang='pl'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Buty Antygrawitacyjne  - Rewolucja w chodzeniu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>⚡ AntygravBoots</h1>
+            <article class="nav-controls">
+                <button class="toggle-btn" id="darkModeBtn">🌙 Dark Mode</button>
+            </article>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <article class="hero-content">
+                <h2>Lataj, zamiast chodzić!</h2>
+                <p>Buty antygrawitacyjne przesuwają granice tego, co możliwe.</p>
+                <img src="darkmode.jpg" alt="Buty Antygrawitacyjne" class="hero-image" id="heroImage">
+                <button class="cta-btn" onclick="document.querySelector('.quiz-section').scrollIntoView({behavior: 'smooth'})">KUP TERAZ</button>
+            </article>
+        </section>
+
+        <section>
+            <h2 style="font-family: 'Space Grotesk', sans-serif; color: var(--primary); text-align: center; margin-bottom: 2rem;">Cechy Produktu</h2>
+            <article class="features">
+                <section class="feature-item">
+                    <span class="feature-icon">🚀</span>
+                    <h3>Niezwykła Prędkość</h3>
+                    <p>Poruszaj się 10x szybciej niż normalnie. Idealne do codziennych dojazdów.</p>
+                </section>
+                <section class="feature-item">
+                    <span class="feature-icon">☁️</span>
+                    <h3>Komfortowe Poduszki</h3>
+                    <p>Chmurze-miękkie stopy. Technologia absorpcji uderzenia przyszłości.</p>
+                </section>
+                <section class="feature-item">
+                    <span class="feature-icon">✨</span>
+                    <h3>Futurystyczny Design</h3>
+                    <p>Bądź trendsetter. Każdy będzie chciał Twoich butów.</p>
+                </section>
+            </article>
+        </section>
+
+        <section class="quiz-section">
+            <h2>Quiz: Czy jesteś gotowy?</h2>
+            <article>
+                <article class="quiz-question">
+                    <label>1. Czy lubisz przygodę?</label>
+                    <article class="quiz-options">
+                        <label><input type="radio" name="q1" value="yes"> Tak</label>
+                        <label><input type="radio" name="q1" value="no"> Nie</label>
+                    </article>
+                </article>
+
+                <article class="quiz-question">
+                    <label>2. Czy chciałbyś latać ponad tłumem?</label>
+                    <article class="quiz-options">
+                        <label><input type="radio" name="q2" value="yes"> Tak</label>
+                        <label><input type="radio" name="q2" value="no"> Nie</label>
+                    </article>
+                </article>
+
+                <article class="quiz-question">
+                    <label>3. Czy jesteś gotowy zmienić swoje życie?</label>
+                    <article class="quiz-options">
+                        <label><input type="radio" name="q3" value="yes"> Tak</label>
+                        <label><input type="radio" name="q3" value="no"> Nie</label>
+                    </article>
+                </article>
+
+                <button class="quiz-btn" onclick="calculateDiscount()">Sprawdź wynik</button>
+                <article class="discount-code" id="discountCode"></article>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 AntygravBoots - Rewolucja w podróżowaniu</p>
+        <p><a href="#privacy">Polityka Prywatności</a> | <a href="#terms">Warunki Użytkowania</a></p>
+    </footer>
+</body>
+</html>
